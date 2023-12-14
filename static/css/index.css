@@ -1,0 +1,17 @@
+:root {
+  /* []============================== [ SETTINGS START ] ==============================[] */
+
+  /* COLORS */
+  --bonk-color-text: white;
+  --bonk-color-text-hover: #e3d6be;
+  --bonk-color-background: #eeb149;
+  --bonk-color-orange: #fc8e03;
+  --bonk-color-dark-orange: #ff7600;
+  --bonk-color-yellow: #eeb149;
+  --bonk-color-bright-yellow: #ffdf25;
+  --bonk-color-red: #d40e26;
+  --bonk-color-dark-red: #ad0d20;
+  --bonk-color-gray-transparent: #fdfdfd5a;
+  /* fc5d01 */
+  /* []============================== [ SETTINGS END ] ==============================[] */
+}

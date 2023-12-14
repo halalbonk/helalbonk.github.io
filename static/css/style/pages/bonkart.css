@@ -1,0 +1,151 @@
+:root {
+    --bonkart-container-border-radius: 20px;
+    --bonkart-container-paddings: 40px;
+}
+.bonkart-info-container {
+    background-color: var(--bonk-color-dark-orange);
+    padding: var(--bonkart-container-paddings);
+    border-radius: var(--bonkart-container-border-radius);
+    display: flex;
+    flex-direction: row;
+    color: var(--bonk-color-text);
+    overflow: hidden;
+}
+.bonkart-i-left-container {
+    width: 50%;
+    border-right: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.bonkart-i-l-logo-container {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.bonkart-i-l-logo {
+    width: 80px;
+    height: 80px;
+    background-image: url('.../../../../textures/logo/bonkart.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bonkart-i-l-text {
+    letter-spacing: 4px;
+    text-align: left;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+.bonkart-i-right-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.bonkart-i-r-text {
+    overflow: hidden;
+    max-width: 70%;
+    max-height: 90%;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1em;
+}
+.bonkart-talents-container {
+    padding-bottom: var(--bonkart-container-paddings);
+    margin-top: 50px;
+    background-color: var(--bonk-color-orange);
+    border-radius: var(--bonkart-container-border-radius);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    gap: 20px;
+}
+.bonkart-talents-title {
+    margin-top: var(--bonkart-container-paddings);
+    margin-left: var(--bonkart-container-paddings);
+    margin-right: var(--bonkart-container-paddings);
+    font-size: 1.5em;
+    color: var(--bonk-color-text);
+    text-align: left;
+}
+.bonkart-talent-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bonkart-talents-list-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 30px;
+    column-gap: 20px;
+}
+.bonkart-talent-card {
+    border-radius: 30px;
+    background-color: var(--bonk-color-dark-orange);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.bonkart-talent-image {
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 27vw;
+    width: 27vw;
+}
+.bonkart-talent-info {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.bonkart-talent-text {
+    font-size: 1.5em;
+    color: var(--bonk-color-text);
+}
+.bonkart-talent-button {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--bonk-color-orange);
+    background-image: url('.../../../../textures/click_arrow.png');
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    --hover: #ffffff45;
+    transition: 0.70s;
+}
+.bonkart-talent-button:hover {
+  box-shadow: inset 0 -5em 0 0 var(--hover);
+}
+@media screen and (max-width: 991px) {
+    .bonkart-info-container {
+        flex-direction: column;
+    }
+    .bonkart-i-left-container {
+        width: 100%;
+        border-right: 0px;
+        border-bottom: 2px solid white;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .bonkart-i-right-container {
+        width: 100%;
+        padding-top: 15px;
+    }
+    .bonkart-talents-list-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bonkart-talent-image {
+        height: 60vw;
+        width: 60vw;
+    }
+    .bonkart-i-l-text {
+        font-size: 2em;
+    }
+}
